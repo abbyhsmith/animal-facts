@@ -2,8 +2,16 @@
 	background-image: url('../../../images/rainforest.jpg');
 	background-size: cover;
 	padding-top: 20px;
+	height: calc(100% - 133px);
+	min-height: 900px;
 	h1 {
 		background-color: blue;
 		color: white;
+	}
+}
+
+@media only screen and (max-height: 900px) {
+	.forestDiv {
+		min-height: 900px;
 	}
 }

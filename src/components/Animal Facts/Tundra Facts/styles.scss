@@ -2,8 +2,16 @@
 	background-image: url('../../../images/tundra.jpg');
 	background-size: cover;
 	padding-top: 20px;
+	min-height: 900px;
+	height: calc(100% - 133px);
 	h1 {
 		color: white;
 		background-color: green;
+	}
+}
+
+@media only screen and (max-height: 900px) {
+	.tundraDiv {
+		min-height: 900px;
 	}
 }

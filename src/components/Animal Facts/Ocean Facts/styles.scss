@@ -2,7 +2,15 @@
 	background-image: url('../../../images/ocean.jpg');
 	background-size: cover;
 	padding-top: 20px;
+	height: calc(100% - 133px);
+	min-height: 900px;
 	h1 {
 		background-color: yellow;
+	}
+}
+
+@media only screen and (max-height: 900px) {
+	.oceanDiv {
+		min-height: 900px;
 	}
 }
