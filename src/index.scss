@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+	font-family: 'Comic Sans MS';
+}
+
+.animalPics {
+	min-height: 50vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	img {
+		width: 350px;
+		margin: 20px;
+	}
+}
+
+p {
+	display: flex;
+	margin: 20px auto;
+	height: 150px;
+}
+
+.clicked {
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	margin: 20px auto;
+	background-color: white;
+	height: 150px;
+	width: 500px;
+	padding: 40px;
+	border-radius: 30px;
+}
+
+h1 {
+	padding: 20px;
+	font-size: 40px;
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 20px;
+}

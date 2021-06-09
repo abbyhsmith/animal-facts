@@ -1,0 +1,22 @@
+.home {
+	background-image: url('../../images/animals.jpg');
+	background-size: cover;
+	background-position: center;
+	min-height: 80vh;
+	padding-top: 40px;
+	h1 {
+		background-color: yellow;
+	}
+}
+
+h2 {
+	display: flex;
+	margin: 20px auto;
+	justify-content: center;
+	height: 70px;
+	background-color: yellow;
+	border-radius: 20px;
+	width: 45%;
+	align-items: center;
+	font-size: 24px;
+}
