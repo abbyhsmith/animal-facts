@@ -1,12 +1,12 @@
 import './App.scss';
 import React from 'react'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import NavBar from './components/Nav/NavBar.js'
-import TundraFactsPage from './components/Animal Facts/Tundra Facts/TundraFactsPage';
-import ForestFactsPage from './components/Animal Facts/Forest Facts/ForestFactsPage';
-import OceanFactsPage from './components/Animal Facts/Ocean Facts/OceanFactsPage';
-import HomePage from './components/Home Page/HomePage.js'
-import Footer from './components/Footer/Footer.js'
+import NavBar from './components/NavBar.js'
+import TundraFactsPage from './components/TundraFactsPage.js';
+import ForestFactsPage from './components/ForestFactsPage.js';
+import OceanFactsPage from './components/OceanFactsPage.js';
+import HomePage from './components/HomePage.js'
+import Footer from './components/Footer.js'
 
 function App() {	
   return (

@@ -1,6 +1,6 @@
-import pandPic from '../images/panda.png'
-import slothPic from '../images/sloth.png'
-import chameleonPic from '../images/chameleon.png'
+import pandPic from '../images/panda.webp'
+import slothPic from '../images/sloth.webp'
+import chameleonPic from '../images/chameleon.webp'
 
 const forestFacts = [
 	{

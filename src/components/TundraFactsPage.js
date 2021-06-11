@@ -1,8 +1,7 @@
 import React, {useRef, useState} from 'react'
-import forestFacts from '../../../data/ForestFacts.js'
-import './styles.scss'
+import tundraFacts from '../data/TundraFacts.js'
 
-const ForestFactsPage = () => {
+const TundraFactsPage = () => {
 	const [clicked, setClicked] = useState(false)
 	const factRef = useRef()
 	const images = []
@@ -21,19 +20,19 @@ const ForestFactsPage = () => {
 		factRef.current.innerHTML = funFact
 	}
 
-	for (let animal in forestFacts) {
+	for (let animal in tundraFacts) {
 		images.push({
-			src: animal.image,
-			alt: animal.name
+			alt: tundraFacts[animal].name,
+			src: tundraFacts[animal].image
 		})
 	}
 
 	return (
-		<div className="forestDiv">
+		<div className="tundraDiv bodyDiv">
 			<h1>Click an animal for a fun fact!</h1>
 			<p className={clicked ? "clicked" : null} ref={factRef}></p>
 			<div className="animalPics">
-				{forestFacts.map((fact) => {
+				{tundraFacts.map((fact) => {
 					return (
 						<img
 							src={fact.image}
@@ -47,4 +46,4 @@ const ForestFactsPage = () => {
 	)
 }
 
-export default ForestFactsPage
+export default TundraFactsPage

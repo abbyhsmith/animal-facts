@@ -1,6 +1,6 @@
-import octoPic from '../images/octopus.png'
-import sharkPic from '../images/shark.png'
-import turtPic from '../images/turtle.png'
+import octoPic from '../images/octopus.webp'
+import sharkPic from '../images/shark.webp'
+import turtPic from '../images/turtle.webp'
 
 const oceanFacts = [
 	{

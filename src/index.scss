@@ -1,9 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	text-align: center;
-	font-family: 'Comic Sans MS';
+	font-family: 'Schoolbell', 'cursive';
+}
+
+.bodyDiv {
+	background-size: cover;
+	background-position: center;
+	height: calc(100% - 135px);
+	padding-top: 40px;
+}
+
+nav {
+	background-color: rgb(63,159,28);
+	width: 100%;
+	font-size: 24px;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+
+ul {
+	display: flex;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	padding: 22px 30px;
+	font-size: 24px;
+	&:hover {
+		background-color: rgb(26,97,0);
+	}
+}
+
+li {
+	list-style-type: none;
+	margin: 20px 0;
+}
+
+.svgTree {
+	width: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	fill: rgb(26,97,0);
+}
+
+.home {
+	background-image: url('images/animals.webp');
+	h1 {
+		background-color: yellow;
+	}
+}
+
+.tundraDiv {
+	background-image: url('images/tundra.webp');
+	padding-top: 20px;
+	h1 {
+		color: white;
+		background-color: green;
+	}
+}
+
+.forestDiv {
+	background-image: url('images/rainforest.webp');
+	padding-top: 20px;
+	h1 {
+		background-color: blue;
+		color: white;
+	}
+}
+
+.oceanDiv {
+	background-image: url('images/ocean.webp');
+	padding-top: 20px;
+	h1 {
+		background-color: yellow;
+	}
 }
 
 .animalPics {
@@ -12,8 +93,10 @@
 	align-items: flex-end;
 	height: 50%;
 	img {
-		width: 350px;
+		width: 25%;
+		max-width: 350px;
 		margin: 20px;
+		filter: drop-shadow(0 0 2rem yellow)
 	}
 }
 
@@ -26,13 +109,15 @@ p {
 .clicked {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	font-size: 28px;
 	margin: 20px auto;
-	background-color: white;
+	background-color: rgba(255,255,255,.85);
 	height: 200px;
-	width: 600px;
+	width: 50%;
 	padding: 40px;
 	border-radius: 30px;
+	max-width: 600px;
 }
 
 h1 {
@@ -40,13 +125,117 @@ h1 {
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
-	font-size: 40px;
+	font-size: 48px;
 	width: 60%;
-	height: 10%;
+	height: auto;
 	margin: 20px auto 0 auto;
 	border-radius: 20px;
+	max-width: 800px;
+}
+
+.foot {
+	display: flex;
+	background-color: rgb(63,159,28);
+	color: white;
+	padding: 10px 0;
+	font-size: 18px;
+	width: 100%;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	bottom: 0;
 }
 
 html, body, #root, .App {
 	height: 100%;
+}
+
+.tundraDiv, .forestDiv, .oceanDiv {
+	min-height: 800px;
+}
+
+h2 {
+	display: flex;
+	margin: 20px auto;
+	justify-content: center;
+	height: auto;
+	background-color: yellow;
+	border-radius: 20px;
+	width: 45%;
+	align-items: center;
+	font-size: 28px;
+	padding: 5px;
+	max-width: 600px;
+}
+
+@media only screen and (max-width: 750px) {
+	.animalPics {
+		height: 40%;
+		padding-bottom: 10px;
+	}
+	
+	h1 {
+		font-size: 30px;
+		margin-top: 0;
+	}
+
+	.clicked {
+		width: 60%;
+		height: 150px;
+		justify-content: center;
+		font-size: 24px;
+		padding: 10px;
+		margin: 15px auto;
+	}
+
+	p {
+		margin: 15px auto;
+		height: 150px;
+	}
+
+	.container {
+		justify-content: space-around;
+	}
+
+	.tundraDiv, .forestDiv, .oceanDiv {
+		min-height: 0;
+	}
+
+	.svgTree {
+		display: none;
+	}
+
+	h2 {
+		font-size: 18px;
+		padding: 10px;
+		height: auto;
+		width: 50%;
+	}
+
+	nav {
+		padding-top: 1px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	ul {
+		padding-bottom: 1px;
+	}
+
+	.nav {
+		a {
+			padding: 22px 15px;
+		}
+	}
+
+	.clicked {
+		font-size: 20px;
+	}
+
+	.animalPics {
+		img {
+			filter: drop-shadow(0 0 1rem yellow);
+		}
+	}
 }

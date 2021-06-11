@@ -1,6 +1,5 @@
 import React, {useRef, useState} from 'react'
-import oceanFacts from '../../../data/OceanFacts.js'
-import './styles.scss'
+import oceanFacts from '../data/OceanFacts.js'
 
 const OceanFactsPage = () => {
 	const [clicked, setClicked] = useState(false)
@@ -29,7 +28,7 @@ const OceanFactsPage = () => {
 	}
 
 	return (
-		<div className="oceanDiv">
+		<div className="oceanDiv bodyDiv">
 			<h1>Click an animal for a fun fact!</h1>
 			<p className={clicked ? "clicked" : null} ref={factRef}></p>
 			<div className="animalPics">

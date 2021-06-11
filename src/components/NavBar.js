@@ -1,7 +1,6 @@
 import React from 'react'
-import './styles.scss'
 import {Link, withRouter} from 'react-router-dom'
-import SvgTree from '../Svgs/SvgTree.js'
+import SvgTree from './Svgs/SvgTree.js'
 
 const NavBar = (props) => {
 	return (

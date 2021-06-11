@@ -1,6 +1,6 @@
-import foxPic from '../images/fox.png'
-import pengPic from '../images/penguin.png'
-import polarbearPic from '../images/polarbear.png'
+import foxPic from '../images/fox.webp'
+import pengPic from '../images/penguin.webp'
+import polarbearPic from '../images/polarbear.webp'
 
 const tundraFacts = [
 	{
