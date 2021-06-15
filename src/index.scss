@@ -8,6 +8,15 @@
 	font-family: 'Schoolbell', 'cursive';
 }
 
+//page styles
+
+html, body, #root, .App {
+	height: 100%;
+}
+
+.tundraDiv, .forestDiv, .oceanDiv {
+	min-height: 800px;
+}
 .bodyDiv {
 	background-size: cover;
 	background-position: center;
@@ -15,6 +24,34 @@
 	padding-top: 40px;
 }
 
+h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	font-size: 48px;
+	width: 60%;
+	height: auto;
+	margin: 20px auto 0 auto;
+	border-radius: 20px;
+	max-width: 800px;
+}
+
+h2 {
+	display: flex;
+	margin: 20px auto;
+	justify-content: center;
+	height: auto;
+	background-color: yellow;
+	border-radius: 20px;
+	width: 45%;
+	align-items: center;
+	font-size: 28px;
+	padding: 5px;
+	max-width: 600px;
+}
+
+//nav
 nav {
 	background-color: rgb(63,159,28);
 	width: 100%;
@@ -54,6 +91,7 @@ li {
 	fill: rgb(26,97,0);
 }
 
+//page backgrounds
 .home {
 	background-image: url('images/animals.webp');
 	h1 {
@@ -87,6 +125,7 @@ li {
 	}
 }
 
+//pictures and facts 
 .animalPics {
 	display: flex;
 	justify-content: space-around;
@@ -120,19 +159,7 @@ p {
 	max-width: 600px;
 }
 
-h1 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	font-size: 48px;
-	width: 60%;
-	height: auto;
-	margin: 20px auto 0 auto;
-	border-radius: 20px;
-	max-width: 800px;
-}
-
+//footer
 .foot {
 	display: flex;
 	background-color: rgb(63,159,28);
@@ -147,28 +174,7 @@ h1 {
 	bottom: 0;
 }
 
-html, body, #root, .App {
-	height: 100%;
-}
-
-.tundraDiv, .forestDiv, .oceanDiv {
-	min-height: 800px;
-}
-
-h2 {
-	display: flex;
-	margin: 20px auto;
-	justify-content: center;
-	height: auto;
-	background-color: yellow;
-	border-radius: 20px;
-	width: 45%;
-	align-items: center;
-	font-size: 28px;
-	padding: 5px;
-	max-width: 600px;
-}
-
+//medium width
 @media only screen and (max-width: 750px) {
 	.animalPics {
 		height: 40%;
@@ -218,6 +224,7 @@ h2 {
 	}
 }
 
+//small width
 @media only screen and (max-width: 500px) {
 	ul {
 		padding-bottom: 1px;
