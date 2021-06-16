@@ -1,6 +1,6 @@
 import './App.scss';
 import React from 'react'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {HashRouter as Router, Route, Switch} from 'react-router-dom'
 import NavBar from './components/NavBar.js'
 import TundraFactsPage from './components/TundraFactsPage.js';
 import ForestFactsPage from './components/ForestFactsPage.js';
