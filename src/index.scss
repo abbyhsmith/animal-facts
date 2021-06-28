@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
 
+:root {
+	--dark-green: rgb(26,97,0);
+	--light-green: rgb(63,159,28);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -53,7 +58,7 @@ h2 {
 
 //nav
 nav {
-	background-color: rgb(63,159,28);
+	background-color: var(--light-green);
 	width: 100%;
 	font-size: 24px;
 	.container {
@@ -75,7 +80,7 @@ a {
 	padding: 22px 30px;
 	font-size: 24px;
 	&:hover {
-		background-color: rgb(26,97,0);
+		background-color: var(--dark-green);
 	}
 }
 
@@ -88,7 +93,7 @@ li {
 	width: 50px;
 	margin-left: 10px;
 	margin-right: 10px;
-	fill: rgb(26,97,0);
+	fill: var(--dark-green);
 }
 
 //page backgrounds
@@ -162,7 +167,7 @@ p {
 //footer
 .foot {
 	display: flex;
-	background-color: rgb(63,159,28);
+	background-color: var(--light-green);
 	color: white;
 	padding: 10px 0;
 	font-size: 18px;
